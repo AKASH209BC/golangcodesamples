@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-var x = 42
-var y = "James Bond"
-var z = true
-
 func main(){
+	// := is the shorthand operator which does both the declaration and initialization at one go
+	x:= 42
+	y:= "James Bond"
+	z:= true
 	fmt.Println(x,y,z)
 	fmt.Println("The value of x is ", x)
 	fmt.Println("The value of y is ", y)
