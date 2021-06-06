@@ -21,7 +21,12 @@ func main(){
 	}
 	persons:= [2]person{person1,person2}
 	fmt.Println("Printing Persons values")
+	// Create a map which stores the value of person last names with key as last name
+	lastname_map:= map[string]person{}
 	for x:=0;x<2;x++{
-		fmt.Println(persons[x])
+		lastname_map[persons[x].last_name]=persons[x]
+	}
+	for i,v:=range lastname_map{
+		fmt.Println(i,v)
 	}
 }
